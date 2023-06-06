@@ -1,5 +1,10 @@
 const ErrorExample = () => {
-  return <h2>useState error example</h2>;
+  let title = "random title";
+  return (
+    <>
+      <h2>{title}</h2>
+    </>
+  );
 };
 
 export default ErrorExample;

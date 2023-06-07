@@ -22,7 +22,7 @@ const UseStateArray = () => {
       })}
       <button className="btn" onClick={() => setPeople([])}>
         {" "}
-        Clear List
+        Clear List Data
       </button>
     </>
   );

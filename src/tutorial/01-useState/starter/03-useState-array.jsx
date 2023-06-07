@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "../../../data";
-
+// useState hook with array as initial value
 const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
   const removeItem = (id) => {

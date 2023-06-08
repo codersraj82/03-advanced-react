@@ -12,7 +12,7 @@ const UseEffectBasics = () => {
       // excute only for value variable have non zero value
       document.title = `Click count ${value}`;
     }
-  });
+  }, []); // for second value as empty array [], useEffect run only at initial render and can not execute if(){} block.
 
   console.log("component render");
   return (

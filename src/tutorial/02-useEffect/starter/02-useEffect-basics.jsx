@@ -7,7 +7,7 @@ const UseEffectBasics = () => {
   // this empty array [] indicates that useEffect runs only at initial render
   // if array have dependency element then useEffect runs whenever change occured in dependency element.
   useEffect(() => {
-    console.log("useEffect execute on initial render");
+    console.log("useEffect execute on every render");
     if (value >= 1) {
       // excute only for value variable have non zero value
       document.title = `Click count ${value}`;

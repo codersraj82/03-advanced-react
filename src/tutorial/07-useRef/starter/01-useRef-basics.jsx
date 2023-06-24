@@ -1,30 +1,29 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const UseRefBasics = () => {
-  const [value, setValue] = useState(0);
-
+  const refContainer = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(refContainer.current.value);
   };
-
+  useEffect(() => {
+    console.log(refContainer.current);
+    refContainer.current.focus();
+  });
   return (
-    <div>
-      <form className='form' onSubmit={handleSubmit}>
-        <div className='form-row'>
-          <label htmlFor='name' className='form-label'>
+    <>
+      <form action="" className="form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name" style={{ margin: "1rem" }}>
             Name
           </label>
-          <input type='text' id='name' className='form-input' />
+          <input type="text" name="name" id="name" ref={refContainer} />
+          <button type="submit" className="btn">
+            Submit
+          </button>
         </div>
-        <button type='submit' className='btn btn-block'>
-          submit
-        </button>
       </form>
-      <h1>value : {value}</h1>
-      <button onClick={() => setValue(value + 1)} className='btn'>
-        increase
-      </button>
-    </div>
+    </>
   );
 };
 

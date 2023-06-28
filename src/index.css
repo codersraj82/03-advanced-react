@@ -393,3 +393,10 @@ ul {
   background-color: #04aa6d;
   color: white;
 }
+
+.warning {
+  color: red;
+}
+.feedback {
+  color: green;
+}

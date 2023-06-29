@@ -400,3 +400,12 @@ ul {
 .feedback {
   color: green;
 }
+
+.prof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}

@@ -4,7 +4,7 @@ import "../src/index.css";
 // import Setup from "./tutorial/02-useEffect/starter/11-GitUser-list";
 
 //import Setup from "./tutorial/02-useEffect/starter/04-fetch-data";
-import Setup from "./tutorial/06-forms/starter/single_onchange_fun";
+import Setup from "./tutorial/06-forms/starter/06-try1-form-m-inpit";
 
 function App() {
   return (
